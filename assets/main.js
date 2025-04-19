@@ -1,3 +1,6 @@
-alert("Alerta desde js");
+const nombreProducto ="Royal Canin";
+let precioUnitario=500;
 
-console.log("Hola mundo");
+let cantidadDeseada= prompt("¿Cuantas bolsas de "+nombreProducto+" desea comprar?");
+
+alert("Su total es: $"+(precioUnitario*cantidadDeseada));
