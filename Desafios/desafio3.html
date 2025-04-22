@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio3</title>
+</head>
+<body>
+    <script>
+        const nombreProducto ="Royal Canin";
+        let precioUnitario=500;
+
+        let cantidadDeseada= prompt("¿Cuantas bolsas de "+nombreProducto+ " que valen $"+precioUnitario+" desea comprar?");
+
+        if(cantidadDeseada>=5){
+            alert("Usted eligio "+cantidadDeseada+ " bolsas de "+nombreProducto+". Se le aplica un descuento del 10%, su total es: $"+((precioUnitario*cantidadDeseada)*0.9));
+        }
+        else{
+            alert("Usted eligio "+cantidadDeseada+ " bolsas de "+nombreProducto+". Su total es: $"+(precioUnitario*cantidadDeseada));
+        }
+        
+    </script>
+</body>
+</html>
