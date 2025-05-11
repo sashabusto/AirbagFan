@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio5</title>
+</head>
+<body>
+    <script>
+
+        let Productos=["Remera Airbag", "Vinillo", "Poster Autografiado", "Stickers", "Llavero de Guido Sardelli"];
+
+        console.log("Los productos son: ");
+        for(let i=0; i<=4; i++){
+            console.log(Productos[i]);
+        }
+
+        for (let i = Productos.length; i > 0; i--) {
+            let productoVendido = Productos.pop();
+            console.log("Se vendió: " + productoVendido);
+            if (Productos.length === 0) {
+                console.log("No hay stock");
+            } else {
+                console.log("Stock restante: " + Productos);
+            }
+        }
+
+    </script>
+</body>
+</html>
