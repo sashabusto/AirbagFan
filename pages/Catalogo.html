@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo-Retro Groove</title>
+    <link rel="shortcut icon" href="../public/Images/discoicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/catalogo.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">Retro Groove</div>
+        <nav>
+        <a href="/index.html">Inicio</a>
+        <a href="./Catalogo.html">Catálogo</a>
+        <a href="./Nosotros.html">Nosotros</a>
+        <a href="./Contacto.html">Contacto</a>
+        
+        <li class="carrito">
+            <button id="abrir-carrito" onclick="abrirCarrito()" class="carrito-btn">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </button>
+        </li>
+        </nav>
+    </header>
+<main>
+    <!-- Carrito -->
+    <div id="modalCarrito" class="hidden">
+        <div class="modal-contenido">
+            <h2 class="modal-titulo">Carrito de Compras</h2>
+            
+            <div id="contenidoCarrito" class="modal-listado">
+            </div>
+            <p class="modal-total">Total: $<span id="totalCarrito">0</span></p>
+            <button onclick="cerrarCarrito()" class="modal-cerrar">X</button>
+            <button onclick="BorrarTodoElCarrito()" class="btn-borrar">
+            <i class="fa-solid fa-trash-can"></i> Borrar Carrito
+            </button>
+            <button onclick="finalizarCompra()" class="btn-comprar">
+            <i class="fa-regular fa-credit-card"></i> Comprar
+            </button>
+        </div>
+    </div>
+
+    <section class="seccion-productos">
+    <div id="productos" class="grid-productos">
+    </div>
+</section>
+
+<script src="../assets/bd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../assets/bd.js"></script>
+</main>
+
+<footer>
+        &copy; 2025 Retro Groove. Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>

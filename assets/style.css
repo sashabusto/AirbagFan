@@ -1,0 +1,169 @@
+:root {
+    --fondo: #2e0f0f;
+    --texto: #c4b091;
+    --boton: #5C1A1A; 
+    --acento: #800020; 
+    --hover: #8B0000;  
+}
+
+body {
+    margin: 0px;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: var(--fondo);
+    color: var(--texto);
+}
+
+header {
+    padding: 24px 32px;
+    border-bottom: 1px solid var(--boton);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+font-family: 'Satisfy', cursive;
+    font-size: 40px;
+    color: var(--acento);
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px #000000aa;
+}
+
+nav a {
+    color: var(--texto);
+    text-decoration: none;
+    margin-left: 28.8px;
+    font-weight: 600;
+    font-size: 17.6px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--acento);
+}
+
+main {
+    max-width: 100%;
+    margin: 32px auto;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 8px;
+    letter-spacing: 1.2px;
+    text-shadow: 1px 1px 3px #000000bb;
+    margin-left: 40px;
+}
+
+p.lead {
+    font-size: 20.8px;
+    margin-bottom: 32px;
+    color: #d8c9b1;
+    margin-left: 40px;
+}
+
+.btn-primary {
+    background-color: var(--boton);
+    color: var(--texto);
+    border: none;
+    padding: 12.8px 28.8px;
+    margin-left: 40px;
+    font-size: 17.6px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 5px #00000088;
+    
+}
+
+.btn-primary:hover {
+    background-color: var(--hover);
+}
+
+footer {
+    text-align: center;
+    padding: 1.5px 0;
+    font-size: 0.9rem;
+    color: #a8977c;
+    border-top: 1px solid var(--boton);
+    margin-top: 4rem;
+}
+
+.ofertas {
+width: 95%;                
+margin: 30px;                    
+padding: 35px 30px;          
+background-color: #4d2826;    
+text-align: center;
+box-sizing: border-box;
+}
+
+.ofertas h2 {
+font-size: 35.2px;
+margin-bottom: 32px;
+color: #a8977c;
+text-shadow: 16px 16px 32px #00000077;
+}
+
+.productos {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 32px;
+justify-items: center;
+}
+.producto {
+width: 100%;                
+max-width: 250px;           
+background-color: #20120c;
+border-radius: 8px;
+padding: 1rem;
+box-shadow: 0 4px 10px #00000066;
+transition: transform 0.3s ease;
+box-sizing: border-box;
+}
+
+.producto:hover {
+transform: translateY(-5px);
+}
+
+.producto img {
+width: 100%;
+height: auto;
+border-radius: 4px;
+margin-bottom: 12.8px;  
+}
+
+.producto h3 {
+font-size: 19.2px;
+margin: 8px 0;
+color: #f3e9d8;
+}
+
+.precio {
+margin: 8px 0 16px;
+color: #f3d1bc;
+font-weight: bold;
+}
+
+.descuento {
+color: var(--acento);
+font-weight: bold;
+margin-right: 8px;
+}
+
+del {
+color: #a08978;
+font-weight: normal;
+margin-left: 6.4px;
+font-size: 15.2px;
+}
+
+#img-construccion {
+width: 1000px;
+display: block;
+margin: 40px auto;
+border: 2px solid #ccc;
+border-radius: 10px;
+}
